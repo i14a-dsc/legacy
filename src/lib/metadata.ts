@@ -12,7 +12,7 @@ interface MetadataProps {
 const SITE_CONFIG = {
   name: "イアと迷える森人達",
   defaultDescription: "dummy placeholder btw",
-  url: "https://i14a.dev",
+  url: "https://legacy.i14a.dev",
   defaultImageUrl: "/images/favicon-max.png",
   twitterCreator: "@1u0704",
 };
