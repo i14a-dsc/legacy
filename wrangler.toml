@@ -1,4 +1,4 @@
-compatibility_date = "2026-06-27"
+name = "i14a-legacy"compatibility_date = "2026-06-27"
 
 [assets]
 directory = "./out"
