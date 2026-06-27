@@ -1,0 +1,16 @@
+{
+  "name": "イアと迷える森人達",
+  "short_name": "I14A",
+  "description": "dummy placeholder btw",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#df2a2a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

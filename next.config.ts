@@ -1,0 +1,81 @@
+import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+
+const nextConfig: NextConfig = {
+  trailingSlash: false,
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "count.getloli.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+      },
+      {
+        protocol: "https",
+        hostname: "*.i14a.dev",
+      },
+    ],
+  },
+  experimental: {
+    optimizePackageImports: ["framer-motion", "@phosphor-icons/react"],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/tools",
+        destination: "https://old.i14a.dev/tools",
+        permanent: true,
+      },
+      {
+        source: "/tools/unicode",
+        destination: "https://old.i14a.dev/tools/unicode",
+        permanent: true,
+      },
+      {
+        source: "/tools/cn",
+        destination: "https://old.i14a.dev/tools/cn",
+        permanent: true,
+      },
+      {
+        source: "/tools/aur",
+        destination: "https://old.i14a.dev/aur",
+        permanent: true,
+      },
+      {
+        source: "/tools/passwd",
+        destination: "https://old.i14a.dev/tools/passwd",
+        permanent: true,
+      },
+      {
+        source: "/tools/errorparse",
+        destination: "https://old.i14a.dev/tools/errorparse",
+        permanent: true,
+      },
+      {
+        source: "/link",
+        destination: "https://old.i14a.dev/link",
+        permanent: true,
+      },
+      {
+        source: "/useragent",
+        destination: "https://old.i14a.dev/useragent",
+        permanent: true,
+      },
+    ];
+  },
+  allowedDevOrigins: ["192.168.10.4"],
+};
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
+export default withMDX(nextConfig);
