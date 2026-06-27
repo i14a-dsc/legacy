@@ -1,3 +1,0 @@
-name = "i14a-website"
-compatibility_date = "2025-12-1"
-compatibility_flags = ["nodejs_compat"]
