@@ -4,7 +4,7 @@ export default function Sidebar() {
   return (
     <div className={"sidebar"}>
       <div className="sidebar-title">
-        <Image src="/favicon.ico" alt="favicon" width={48} height={48} />
+        <Image src="/favicon.ico" alt="favicon" width={48} height={48} unoptimized />
         <h1 className="sidebar-title-text">イアのサイト(低予算版)</h1>
       </div>
       <div>
