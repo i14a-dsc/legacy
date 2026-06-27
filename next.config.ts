@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-export const nextConfig: NextConfig = {
+export default {
   output: "export",
   trailingSlash: false,
   pageExtensions: ["js", "jsx", "ts", "tsx"],
@@ -65,4 +65,4 @@ export const nextConfig: NextConfig = {
     ];
   },
   allowedDevOrigins: ["192.168.10.4"],
-};
+} as NextConfig;
