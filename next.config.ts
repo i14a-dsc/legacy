@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
-import createMDX from "@next/mdx";
 
-const nextConfig: NextConfig = {
+export const nextConfig: NextConfig = {
   trailingSlash: false,
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx"],
   images: {
     remotePatterns: [
       {
@@ -69,13 +68,3 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: ["192.168.10.4"],
 };
-
-const withMDX = createMDX({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
-});
-
-export default withMDX(nextConfig);
