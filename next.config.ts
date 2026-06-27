@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 export const nextConfig: NextConfig = {
+  output: "export",
   trailingSlash: false,
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   images: {
@@ -18,9 +19,6 @@ export const nextConfig: NextConfig = {
         hostname: "*.i14a.dev",
       },
     ],
-  },
-  experimental: {
-    optimizePackageImports: ["framer-motion", "@phosphor-icons/react"],
   },
   async redirects() {
     return [
